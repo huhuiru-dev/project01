@@ -1,0 +1,21 @@
+--cpu Cortex-M3
+"firstfirst\startup_stm32f103xb.o"
+"firstfirst\main.o"
+"firstfirst\stm32f1xx_it.o"
+"firstfirst\stm32f1xx_hal_msp.o"
+"firstfirst\stm32f1xx_hal_gpio_ex.o"
+"firstfirst\stm32f1xx_hal.o"
+"firstfirst\stm32f1xx_hal_rcc.o"
+"firstfirst\stm32f1xx_hal_rcc_ex.o"
+"firstfirst\stm32f1xx_hal_gpio.o"
+"firstfirst\stm32f1xx_hal_dma.o"
+"firstfirst\stm32f1xx_hal_cortex.o"
+"firstfirst\stm32f1xx_hal_pwr.o"
+"firstfirst\stm32f1xx_hal_flash.o"
+"firstfirst\stm32f1xx_hal_flash_ex.o"
+"firstfirst\stm32f1xx_hal_exti.o"
+"firstfirst\system_stm32f1xx.o"
+--strict --scatter "firstfirst\firstfirst.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "firstfirst.map" -o firstfirst\firstfirst.axf
